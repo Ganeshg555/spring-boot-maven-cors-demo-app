@@ -16,6 +16,10 @@ public class EmployeeController {
 		return ResponseEntity.ok("Hello from application");
 	}
 	
+	/**
+	 * API to return simply list of employee'
+	 * @return
+	 */
 	@GetMapping("/list")
 	public ResponseEntity<?> getAll() {
 		return ResponseEntity.ok(new ArrayList<>());
